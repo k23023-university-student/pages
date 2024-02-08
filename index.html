@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Score & Time Attack Anagram</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <script type="module" src="index.js"></script> 
+   <script>
+      function hid(){
+         document.querySelector(".menu").classList.add("hidden");
+      }
+      function show(){
+         document.querySelector(".menu").classList.remove("hidden");
+      }
+      
+   </script>
+   <div class="main-screen">
+      <div class="gameArea">
+         残り: <div class="nokori"></div>
+            <div id="questonWordBig">現在の単語</div>
+            <input type="text" id="word" placeholder="答えの単語を入力">
+            <input type="button" id="ok" value="決定">
+            <div class="hint"></div>
+            <p>Score: <span id="score">0</span></p>
+      </div>
+      <div class="menu">
+         <div class="option-area">
+            <h1>Score & Time Attack Anagram</h1>
+            <form name="settings">
+              <label><input type="radio" class="set_radio" name="set_radio" value="one">時間無制限アタック</label>
+              <label><input type="radio" class="set_radio" name="set_radio" value="taisen">2分でどれだけできるかタイムアタック</label>
+            </form>
+            <p class="description">ゲームの実行方法を選択してください</p>
+            <input type="button" value="ゲームを始める" id="start">
+            <table border="1" id="ranking">
+               <caption>タイムアタックのみんなの得点一覧(ハイスコア10件まで表示)</caption>
+               <tr><th>ユーザ名</th><th>スコア</th></tr>
+            </table>
+         </div>
+         <div class="countdown">
+            0
+         </div>
+      </div>
+</body>
+</html>

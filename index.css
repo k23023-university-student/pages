@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+html{
+    font-family: 'Raleway', 'Zen Kaku Gothic New', sans-serif;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table th{
+    font-weight: bold;
+}
+.main-screen{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+.gameArea{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    background-color: rgb(203, 197, 197);
+    width: 50%;
+    height: 60%;
+    text-align: center;
+}
+.menu{
+    background-color: rgb(247, 195, 130);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: block;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+.menu.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+.menu .option-area{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,-50%);
+}
+.option-area #start{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.description{
+    border: 0.2rem dotted gray;
+    padding: 10px;
+    border-radius: 20px;
+}
+.countdown{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+    visibility: hidden;
+}
+.nokori{
+    font-size: 1em;
+    display: inline;
+}
+#questonWordBig{
+    font-size: 2em;
+    font-weight: bold;
+}
+#word, #ok{
+    width: 100px;
+    height: 100px;
+}
+.hint .true{
+    background-color: greenyellow;
+}
+.hint .false{
+    background-color: red;
+}
